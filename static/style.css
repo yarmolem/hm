@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    margin-top: 0;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contentFormulario{
+    background-color: black;
+    height: 1200px;
+}
+
+
+.contentFormulario2{
+    background-color: white;
+    height: 850px;
+}
+
+.formulario{
+    background-color: #3B0D0F;
+    height: 70%;
+    width: 68%;
+      
+    max-width: 1133px;
+    border-radius: 20px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imgFoto{
+    border-radius: 10px;
+}
+
+h1 {
+    text-align:center;
+    line-height:1.15;
+    color: #191C1F;
+    text-align:center;
+    line-height:1.15;
+    padding: 39px 39px 1px 39px;
+}
+
+strong{
+    background-color:rgba(0, 0, 0, 0);
+    color:rgb(212, 10, 10);
+  
+
+    font-family:Montserrat, sans-serif;
+    font-size:28px
+}
+
+
+p{
+    font-family: Georgia, serif;
+    color: white;  
+     
+}
+
+.contenedorInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputtext{
+    background: #FFFFFF;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 20vw;
+    border-style: solid;
+    border-color: #989898;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.contenedorTerminos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorTerminos p{
+    margin-bottom: -10px;
+    font-size: small;
+}
+
+
+
+
+.btn {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    border: none;
+    width: 40vw;
+    color: white;
+    font-size: 20px;
+    background: #106EBE;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        color:white;
+        background: #0A497E;
+    }
+
+.footer {
+    background-color: #106EBE;
+    color: #fff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.formularioP{
+    text-align: center;
+}
+
+h3{
+    font-size:30px;
+}
+
