@@ -35,7 +35,6 @@ app.get("/agradecimiento", (req, res) => {
 
 app.post("/email", (req, res) => {
   const { email, firstName } = req.body;
-  console.log(req.body);
   if (!email || !firstName)
     return res.send({
       success: false,
