@@ -33,13 +33,13 @@ app.get("/agradecimiento", (req, res) => {
   res.sendFile(join(__dirname, "agradecimiento.html"));
 });
 
-app.post("/email", (req, res) => {
+app.post("/api/email", (req, res) => {
   const { email, firstName } = req.body;
   if (!email || !firstName)
     return res.send({
       success: false,
     });
-  sendMail(email, firstName, "");
+  sendMail(email, firstName);
   res.send({
     success: true,
   });
