@@ -22,7 +22,7 @@ router.post("/email", (req, res) => {
     return res.send({
       success: false,
     });
-  sendMail(email, firstName, "");
+  sendMail(email, firstName);
   res.send({
     success: true,
   });
