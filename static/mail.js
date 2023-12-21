@@ -9,7 +9,7 @@ const sendMail = async (payload) => {
     const jsonRes = await res.json();
 
     if (jsonRes.success) {
-      window.location.replace("/agradecimiento");
+      //window.location.replace("/agradecimiento");
     }
   } catch (e) {
     console.log(e);

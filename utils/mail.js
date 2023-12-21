@@ -1,10 +1,9 @@
 import { config } from "../mailconfig.js";
 import { join } from "path";
 import fs from "fs/promises";
-import nodemailer from "nodemailer";
+import { SMTPClient } from "emailjs";
 
 const __dirname = process.cwd();
-const transporter = nodemailer.createTransport(config);
 
 export async function sendMail(email, name) {
   try {
@@ -12,28 +11,32 @@ export async function sendMail(email, name) {
       join(__dirname, "mensaje.html"),
       "utf-8"
     );
+
+    const transporter = new SMTPClient(config);
+
     await new Promise((resolve, reject) => {
-      transporter.sendMail(
+      transporter.send(
         {
           from: "magneticohombre@gmail.com",
           to: email,
           subject: `Asunto del correo: ¡Hola ${name}, aquí está tu eBook!`,
-          html: htmlContent,
-          attachments: [
+          text: "Text content of the email", // Add text content if needed
+          attachment: [
             {
-              filename:
-                "La Guía Perfecta Para Saber Si Realmente Le Gustas A La Chica Que Te Vuelve Loco.pdf",
-              path: join(__dirname, "./recursos/Libro.pdf"),
-              encoding: "base64",
+              data: join(__dirname, "./recursos/Libro.pdf"),
+              alternative: true,
+              type: "application/pdf",
+              name: "La Guía Perfecta Para Saber Si Realmente Le Gustas A La Chica Que Te Vuelve Loco.pdf",
             },
           ],
         },
-        (err, info) => {
+        (err, message) => {
           if (err) {
             console.error(err);
             reject(err);
           } else {
-            resolve(info);
+            console.log(message);
+            resolve(message);
           }
         }
       );
