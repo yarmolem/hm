@@ -20,7 +20,7 @@ export async function sendMail(email, name) {
       attachments: [
         {
           filename: "Libro.pdf",
-          path: join(__dirname, "./recursos/Libro.pdf"),
+          path: join(__dirname, "./recursos/La Guía Perfecta Para Saber Si Realmente Le Gustas A La Chica Que Te Vuelve Loco.pdf"),
           encoding: "base64",
         },
       ],
