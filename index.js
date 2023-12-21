@@ -46,3 +46,5 @@ app.post("/email", (req, res) => {
 });
 
 app.listen(port, () => console.log(`Running on ${port}`));
+
+export default app;
