@@ -13,13 +13,13 @@ export async function sendMail(email, name) {
       "utf-8"
     );
     transporter.sendMail({
-      from: "drwnrugama@gmail.com",
+      from: "magneticohombre@gmail.com",
       to: email,
       subject: `Asunto del correo: ¡Hola ${name}, aquí está tu eBook!`,
       html: htmlContent,
       attachments: [
         {
-          filename: "Libro.pdf",
+          filename: "La Guía Perfecta Para Saber Si Realmente Le Gustas A La Chica Que Te Vuelve Loco.pdf",
           path: join(__dirname, "./recursos/Libro.pdf"),
           encoding: "base64",
         },

@@ -64,3 +64,9 @@ h2{
         color:white;
         background: rgb(1, 80, 1);
     }
+    @media(max-width:1068px) {
+        .btn{
+            width: 80vw;
+            font-size: medium;
+        }
+    }

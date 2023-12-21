@@ -2,9 +2,9 @@ export const config = {
   service: "gmail",
   host: "smtp.gmail.com",
   port: 587,
-  secure: false,
+  secure: true,
   auth: {
-    user: "drwdrwrugama@gmail.com",
-    pass: "atiojrfstmfhqtgd",
+    user: "magneticohombre@gmail.com",
+    pass: "hkjmsoqywhsmzgdw",
   },
 };
